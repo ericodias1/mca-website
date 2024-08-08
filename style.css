@@ -806,6 +806,22 @@ select{
   }
 }
 
+.exit-fade-out {
+  animation: exit-fade-out 0.3s ease 0s 1 normal forwards;
+}
+
+@keyframes exit-fade-out {
+	0% {
+		opacity: 1;
+		transform: scale(1);
+	}
+
+	100% {
+		opacity: 0;
+		transform: scale(0.6);
+	}
+}
+
 @keyframes bounce {
   0%, 100% {
     transform: translateY(-25%);
