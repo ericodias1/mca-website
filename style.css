@@ -806,6 +806,10 @@ select{
   }
 }
 
+.entrance-fade-in {
+  animation: entrance-fade-in 0.3s ease 0s 1 normal forwards;
+}
+
 .exit-fade-out {
   animation: exit-fade-out 0.3s ease 0s 1 normal forwards;
 }
@@ -819,6 +823,18 @@ select{
 	100% {
 		opacity: 0;
 		transform: scale(0.6);
+	}
+}
+
+@keyframes entrance-fade-in {
+	0% {
+		opacity: 0;
+		transform: scale(0.6);
+	}
+
+	100% {
+		opacity: 1;
+		transform: scale(1);
 	}
 }
 
@@ -1150,7 +1166,10 @@ input[type=range]::-moz-focus-outer {
   transition: y 0.1s ease-out, transform 0.22s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1), width 0.1s ease-out;
 }
 
-.hero-image {  position: relative; }
+.hero-image {
+  position: relative;
+  height: 100vh;
+}
 
 .hero-image:before {
     content: "";
