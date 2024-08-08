@@ -46,6 +46,7 @@ html {
   /* 3 */
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   /* 4 */
+  scroll-behavior: smooth;
 }
 
 /*
@@ -814,6 +815,66 @@ select{
   animation: exit-fade-out 0.3s ease 0s 1 normal forwards;
 }
 
+.zoom-project {
+  transition: transform .2s; /* Animation */
+}
+
+.zoom-project:hover {
+  transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.glow-step-second {
+  position: relative;
+  height: 1px;
+  width: calc(100% - 32px);
+  overflow: hidden;
+  border-radius: 50px;
+}
+
+.glow-step-second::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to right, rgb(6, 189, 248), rgb(2, 132, 199));
+  animation: moveAndFade 2s ease-in-out infinite;
+  animation-delay: 1s;
+  opacity: 0; /* A animação começa invisível */
+}
+
+.glow-step-first {
+  position: relative;
+  height: 1px;
+  width: calc(100% - 32px);
+  overflow: hidden;
+  border-radius: 50px;
+}
+
+.glow-step-first::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to right, rgb(6, 189, 248), rgb(2, 132, 199));
+  animation: moveAndFade 2s ease-in-out infinite;
+  opacity: 0; /* A animação começa invisível */
+}
+
+@keyframes moveAndFade {
+  0% {
+    transform: translateX(-100%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(calc(100% + 50px)); /* A bolinha se move além do final da borda */
+    opacity: 0;
+  }
+}
+
 @keyframes exit-fade-out {
 	0% {
 		opacity: 1;
@@ -868,10 +929,10 @@ select{
 	}
 }
 
-.path-anim {
+.underline-animation {
   stroke-dasharray: 2000;
   stroke-dashoffset: 2000;
-  animation: dash 0.8s linear forwards;
+  animation: dash 2s linear forwards;
 }
 
 @keyframes dash {
@@ -880,12 +941,21 @@ select{
   }
 }
 
-.step-pulse {
+.step-pulse-1 {
   border-radius: 50px;
+  animation: pulse-animation 2s infinite;
+}
 
-  animation: pulse-animation infinite;
-  animation-delay: 0ms, 2s;
-  animation-duration: 1s, 1s;
+.step-pulse-2 {
+  border-radius: 50px;
+  animation: pulse-animation 2s infinite;
+  animation-delay: 0.8s;
+}
+
+.step-pulse-3 {
+  border-radius: 50px;
+  animation: pulse-animation 2s infinite;
+  animation-delay: 1.8s;
 }
 
 @keyframes pulse-animation {

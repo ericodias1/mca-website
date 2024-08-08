@@ -70,7 +70,7 @@
                   </h1>
                   </div>
                   <svg viewBox="0 0 800 100">
-                    <path class="path-anim" d="M387.23992679397287 47.525274038681246C344.6390305944286 49.02004281716431 131.33559431513171 54.10225717263306 131.63454959670725 56.493886709579705C131.93350487828278 58.88551624652636 388.8841808426382 59.78237446185839 389.033658483426 61.87505126036102C389.1831361242138 63.96772805886364 150.6181107946239 66.20988758441709 132.5314154414338 69.04994750059547C114.44472008824371 71.89000741677381 255.84980787714346 77.27116688129209 280.51348636428537 78.91541075743143 " fill="none" stroke-width="5" stroke="url(&quot;#SvgjsLinearGradient1000&quot;)" stroke-linecap="round" transform="matrix(1.79585632602213,0,0,1.79585632602213,-226.88703018480692,-79.00551883051787)"></path>
+                    <path class="underline-animation" d="M387.23992679397287 47.525274038681246C344.6390305944286 49.02004281716431 131.33559431513171 54.10225717263306 131.63454959670725 56.493886709579705C131.93350487828278 58.88551624652636 388.8841808426382 59.78237446185839 389.033658483426 61.87505126036102C389.1831361242138 63.96772805886364 150.6181107946239 66.20988758441709 132.5314154414338 69.04994750059547C114.44472008824371 71.89000741677381 255.84980787714346 77.27116688129209 280.51348636428537 78.91541075743143 " fill="none" stroke-width="5" stroke="url(&quot;#SvgjsLinearGradient1000&quot;)" stroke-linecap="round" transform="matrix(1.79585632602213,0,0,1.79585632602213,-226.88703018480692,-79.00551883051787)"></path>
                     <defs>
                       <linearGradient id="SvgjsLinearGradient1000">
                         <stop stop-color="#1a67ac" offset="0"></stop>
@@ -82,20 +82,22 @@
                 </div>
               </div>
             </div>
-            <div class="relative pt-32 pb-10 md:pt-40 md:pb-16" style="animation: fade-in-right 0.5s ease-in 0s normal forwards;">
+            <div class="relative pt-32 pb-10 md:pt-40 md:pb-16" style="animation: fade-in-right 1s ease-in normal forwards;">
               <img style="width: 300px;" src="./images/ios-app.png" />
             </div>
           </div>
-          <div class="flex justify-center bounce-arrow mt-16">
-            <div style="animation: bounce 1s infinite;" class="bg-sky-500 dark:bg-slate-800 p-2 w-10 h-10 ring-1 ring-slate-900/5 dark:ring-slate-200/20 shadow-lg rounded-full flex items-center justify-center">
-              <svg class="w-6 h-6 text-violet-500" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
-                <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
-              </svg>
+          <div class="hero-content">
+            <div class="flex justify-center bounce-arrow mt-16" style="opacity: 1;">
+              <button onClick="document.getElementById('second-section').scrollIntoView();" style="animation: bounce 1s infinite;" class="bg-sky-500 dark:bg-slate-800 p-2 w-10 h-10 ring-1 ring-slate-900/5 dark:ring-slate-200/20 shadow-lg rounded-full flex items-center justify-center">
+                <svg class="w-6 h-6 text-violet-500" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+                  <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                </svg>
+              </button>
             </div>
           </div>
         </section>
         <!-- Process -->
-        <section>
+        <section id="second-section">
           <div class="max-w-6xl mx-auto px-4 sm:px-6">
             <div class="pt-10 pb-12 md:pt-16 md:pb-20">
               <!-- Section header -->
@@ -107,8 +109,8 @@
               <div class="max-w-sm mx-auto grid gap-8 md:grid-cols-3 lg:gap-16 items-start md:max-w-none">
                 <!-- 1st item -->
                 <div class="relative flex flex-col items-center" data-aos="fade-up">
-                  <div aria-hidden="true" class="absolute h-1 border-t border-dashed border-gray-700 hidden md:block" style="width:calc(100% - 32px);left:calc(50% + 48px);top:32px;" data-aos="fade-in" data-aos-delay="200"></div>
-                  <svg class="step-pulse w-16 h-16 mb-4" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                  <div aria-hidden="true" class="glow-step-first absolute h-1 hidden md:block" style="width:calc(100% - 32px);left:calc(50% + 48px);top:32px;" data-aos="fade-in" data-aos-delay="200"></div>
+                  <svg class="step-pulse-1 w-16 h-16 mb-4" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
                     <rect class="fill-current text-sky-400" width="64" height="64" rx="32" />
                     <path class="stroke-current text-purple-300" stroke-width="2" stroke-linecap="square" d="M21 23h22v18H21z" fill="none" fill-rule="evenodd" />
                     <path class="stroke-current text-white" d="M26 28h12M26 32h12M26 36h5" stroke-width="2" stroke-linecap="square" />
@@ -118,8 +120,8 @@
                 </div>
                 <!-- 2nd item -->
                 <div class="relative flex flex-col items-center" data-aos="fade-up" data-aos-delay="200">
-                  <div aria-hidden="true" class="absolute h-1 border-t border-dashed border-gray-700 hidden md:block" style="width:calc(100% - 32px);left:calc(50% + 48px);top:32px;" data-aos="fade-in" data-aos-delay="400"></div>
-                  <svg class="step-pulse w-16 h-16 mb-4" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                  <div aria-hidden="true" class="glow-step-second absolute h-1 hidden md:block" style="width:calc(100% - 32px);left:calc(50% + 48px);top:32px;" data-aos="fade-in" data-aos-delay="400"></div>
+                  <svg class="step-pulse-2 w-16 h-16 mb-4" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
                     <rect class="fill-current text-sky-400" width="64" height="64" rx="32" />
                     <g fill="none" fill-rule="evenodd">
                       <path class="stroke-current text-purple-300" d="M40 22a2 2 0 012 2v16a2 2 0 01-2 2H24a2 2 0 01-2-2V24a2 2 0 012-2" stroke-width="2" stroke-linecap="square" />
@@ -131,7 +133,7 @@
                 </div>
                 <!-- 3rd item -->
                 <div class="relative flex flex-col items-center" data-aos="fade-up" data-aos-delay="400">
-                  <svg class="step-pulse w-16 h-16 mb-4" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                  <svg class="step-pulse-3 w-16 h-16 mb-4" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
                     <rect class="fill-current text-sky-400" width="64" height="64" rx="32" />
                     <path class="stroke-current text-purple-300" stroke-width="2" stroke-linecap="square" d="M21 35l4 4 12-15" fill="none" fill-rule="evenodd" />
                     <path class="stroke-current text-white" d="M42 29h-3M42 34h-7M42 39H31" stroke-width="2" stroke-linecap="square" />
@@ -216,10 +218,10 @@
               <!-- Section content -->
               <div>
                 <div class="relative flex flex-col mt-16" data-aos="fade-up">
-                  <div class="w-full" x-show="tab === '1'" x-transition:enter="transition ease-in-out duration-500 transform order-first" x-transition:enter-start="opacity-0 scale-98" x-transition:enter-end="opacity-100 scale-100" x-transition:leave="transition ease-out duration-300 transform absolute" x-transition:leave-start="opacity-100 scale-100" x-transition:leave-end="opacity-0 scale-98">
+                  <div class="w-full" x-transition:enter="transition ease-in-out duration-500 transform order-first" x-transition:enter-start="opacity-0 scale-98" x-transition:enter-end="opacity-100 scale-100" x-transition:leave="transition ease-out duration-300 transform absolute" x-transition:leave-start="opacity-100 scale-100" x-transition:leave-end="opacity-0 scale-98">
                     <article class="relative max-w-md mx-auto md:max-w-none">
-                      <figure class="md:absolute md:inset-y-0 md:right-0 md:w-1/2">
-                        <img class="w-full h-full object-cover" src="./images/tabs-image-01.jpg" width="516" height="387" alt="Tabs 01" />
+                      <figure class="md:absolute md:inset-y-0 md:right-0">
+                        <img class="w-full h-full object-cover" src="./images/mac-and-iphone-app.png" width="516" height="387" alt="Tabs 01" />
                       </figure>
                       <div class="relative bg-gray-800 py-8 md:py-16 px-6 md:pr-16 md:max-w-lg lg:max-w-xl">
                         <h4 class="h4 mb-2">Optimize and scale, easy to start</h4>
@@ -244,27 +246,27 @@
               </div>
               <div class="flex justify-center">
                 <div class="max-w-sm mx-auto grid gap-8 md:grid-cols-5 lg:gap-8 items-start md:max-w-none">
-                  <div class="relative flex flex-col items-center aos-init aos-animate">
+                  <div class="zoom-project relative flex flex-col items-center aos-init aos-animate">
                     <a class="inline-block" href="index.html" aria-label="Logo" data-aos="fade-up">
                       <img  src="./images/glg.png" width="130" height="125" />
                     </a>
                   </div>
-                  <div class="relative flex flex-col items-center aos-init aos-animate">
+                  <div class="zoom-project relative flex flex-col items-center aos-init aos-animate">
                     <a class="inline-block" href="index.html" aria-label="Logo" data-aos="fade-up">
                     <img  src="./images/glg-guru.png" width="130" height="125" />
                     </a>
                   </div>
-                  <div class="relative flex flex-col items-center aos-init aos-animate mt-2">
+                  <div class="zoom-project relative flex flex-col items-center aos-init aos-animate mt-2">
                     <a class="inline-block" href="index.html" aria-label="Logo" data-aos="fade-up">
                     <img src="./images/mag-guru.png" width="140" height="125" />
                     </a>
                   </div>
-                  <div class="relative flex flex-col items-center aos-init aos-animate mt-2">
+                  <div class="zoom-project relative flex flex-col items-center aos-init aos-animate mt-2">
                     <a class="inline-block" href="index.html" aria-label="Logo" data-aos="fade-up">
                     <img  src="./images/divots.png" width="130" height="125" />
                     </a>
                   </div>
-                  <div class="relative flex flex-col items-center aos-init aos-animate">
+                  <div class="zoom-project relative flex flex-col items-center aos-init aos-animate">
                     <a class="inline-block" href="index.html" aria-label="Logo" data-aos="fade-up">
                     <img  src="./images/psu.png" width="170" height="125" />
                     </a>
