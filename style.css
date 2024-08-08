@@ -838,7 +838,7 @@ select{
   left: 0;
   height: 100%;
   width: 100%;
-  background: linear-gradient(to right, rgb(6, 189, 248), rgb(2, 132, 199));
+  background: linear-gradient(to right, rgb(6, 189, 248), rgb(14, 165, 233));
   animation: moveAndFade 2s ease-in-out infinite;
   animation-delay: 1s;
   opacity: 0; /* A animação começa invisível */
@@ -859,7 +859,7 @@ select{
   left: 0;
   height: 100%;
   width: 100%;
-  background: linear-gradient(to right, rgb(6, 189, 248), rgb(2, 132, 199));
+  background: linear-gradient(to right, rgb(6, 189, 248), rgb(14, 165, 233));
   animation: moveAndFade 2s ease-in-out infinite;
   opacity: 0; /* A animação começa invisível */
 }
@@ -933,6 +933,29 @@ select{
   stroke-dasharray: 2000;
   stroke-dashoffset: 2000;
   animation: dash 2s linear forwards;
+  animation-delay: 1s;
+}
+
+.fade-in-bottom {
+  animation: fade-in-bottom 2s ease 0s 1 normal forwards;
+}
+
+.fade-in-bottom-delayed {
+  animation: fade-in-bottom 2s ease normal forwards;
+  animation-delay: 2s;
+  opacity: 0;
+}
+
+@keyframes fade-in-bottom {
+	0% {
+		opacity: 0;
+		transform: translateY(50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
 }
 
 @keyframes dash {
