@@ -68,6 +68,10 @@
     animation-delay: -6000ms;
 }
 
+html:has(body:has([scrolling])) .test-one {
+    display: none;
+  }
+
 /* Custom AOS distance */
 @media screen {
     html:not(.no-js) [data-aos=fade-up] {
