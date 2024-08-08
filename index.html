@@ -21,7 +21,15 @@
               <img class="w-full h-full object-cover" src="./images/mca-logo.png" width="1440" height="394" alt="Logo" />
               </a>
             </div>
-            <a class="btn-sm text-sm md:text-normal text-white bg-sky-500 hover:bg-sky-600 ml-3" href="contact.html">Contact Us</a>
+            <span class="relative inline-flex">
+              <a href="contact.html" style=":hover {background-color: rgb(3 105 161);}"  class="inline-flex items-center px-4 py-2 font-semibold leading-6 text-sm shadow rounded-md text-white bg-sky-500 transition ease-in-out duration-150 cursor-not-allowed ring-1">
+                Contact Us
+              </a>
+              <span class="flex absolute h-3 w-3 top-0 right-0 -mt-1 -mr-1">
+                <span style="animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;" class="absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-3 w-3 bg-white"></span>
+              </span>
+            </span>
           </div>
         </div>
       </header>
@@ -56,13 +64,15 @@
               </div>
               <div class="relative pt-32 pb-10 md:pt-40 md:pb-16">
                 <div class="max-w-3xl mx-auto text-left pb-12 md:pb-16">
+                  <div class="flex">
                   <h1 class="h1" data-aos="fade-up">Transform ideas in <br>
-                    <span style="background: -webkit-linear-gradient(#38bdf8, #075985); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">real software.</span>
+                    <span class="gradient-animation relative">real software.</span>
                   </h1>
-                  <svg viewBox="0 0 800 150">
-                    <path class="path-anim" d="M400.73427520548296 25.088576814656847C344.23203216349077 30.02131225777208 61.870292051186084 47.809054872518175 61.720816953529834 54.68498947334825C61.571341855873584 61.56092407417833 399.5384718811015 59.46825109037299 399.83742461954546 66.34418441963732C400.13637735798943 73.22011774890163 91.61618235066524 88.9151784788821 63.514533384193896 95.94058944893419C35.41288441772255 102.96600041898628 203.27536458129674 106.40397344144722 231.22753082071733 108.49665023994982 " fill="none" stroke-width="9" stroke="url(&quot;#SvgjsLinearGradient1011&quot;)" stroke-linecap="round" transform="matrix(1.4000737149206108,0,0,1.4000737149206108,-78.17097107526328,-21.317270948082253)"></path>
+                  </div>
+                  <svg viewBox="0 0 800 100">
+                    <path class="path-anim" d="M387.23992679397287 47.525274038681246C344.6390305944286 49.02004281716431 131.33559431513171 54.10225717263306 131.63454959670725 56.493886709579705C131.93350487828278 58.88551624652636 388.8841808426382 59.78237446185839 389.033658483426 61.87505126036102C389.1831361242138 63.96772805886364 150.6181107946239 66.20988758441709 132.5314154414338 69.04994750059547C114.44472008824371 71.89000741677381 255.84980787714346 77.27116688129209 280.51348636428537 78.91541075743143 " fill="none" stroke-width="5" stroke="url(&quot;#SvgjsLinearGradient1000&quot;)" stroke-linecap="round" transform="matrix(1.79585632602213,0,0,1.79585632602213,-226.88703018480692,-79.00551883051787)"></path>
                     <defs>
-                      <linearGradient id="SvgjsLinearGradient1011">
+                      <linearGradient id="SvgjsLinearGradient1000">
                         <stop stop-color="#1a67ac" offset="0"></stop>
                         <stop stop-color="#1fbbe8" offset="1"></stop>
                       </linearGradient>
@@ -72,8 +82,8 @@
                 </div>
               </div>
             </div>
-            <div class="relative pt-32 pb-10 md:pt-40 md:pb-16">
-              <img style="width: 300px;" src="./images/app.png"/>
+            <div class="relative pt-32 pb-10 md:pt-40 md:pb-16" style="animation: fade-in-right 0.5s ease-in 0s normal forwards;">
+              <img style="width: 300px;" src="./images/ios-app.png" />
             </div>
           </div>
         </section>
@@ -81,6 +91,13 @@
         <section>
           <div class="max-w-6xl mx-auto px-4 sm:px-6">
             <div class="pt-10 pb-12 md:pt-16 md:pb-20">
+              <div class="flex justify-center bounce-arrow">
+                <div style="animation: bounce 1s infinite;" class="bg-sky-500 dark:bg-slate-800 p-2 w-10 h-10 ring-1 ring-slate-900/5 dark:ring-slate-200/20 shadow-lg rounded-full flex items-center justify-center">
+                  <svg class="w-6 h-6 text-violet-500" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+                    <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                  </svg>
+                </div>
+              </div>
               <!-- Section header -->
               <div class="max-w-3xl mx-auto text-center pb-12 md:pb-20">
                 <h2 class="h2 mb-4" data-aos="fade-up">End-to-end development</h2>
@@ -91,7 +108,7 @@
                 <!-- 1st item -->
                 <div class="relative flex flex-col items-center" data-aos="fade-up">
                   <div aria-hidden="true" class="absolute h-1 border-t border-dashed border-gray-700 hidden md:block" style="width:calc(100% - 32px);left:calc(50% + 48px);top:32px;" data-aos="fade-in" data-aos-delay="200"></div>
-                  <svg class="w-16 h-16 mb-4" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                  <svg class="step-pulse w-16 h-16 mb-4" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
                     <rect class="fill-current text-sky-400" width="64" height="64" rx="32" />
                     <path class="stroke-current text-purple-300" stroke-width="2" stroke-linecap="square" d="M21 23h22v18H21z" fill="none" fill-rule="evenodd" />
                     <path class="stroke-current text-white" d="M26 28h12M26 32h12M26 36h5" stroke-width="2" stroke-linecap="square" />
@@ -102,7 +119,7 @@
                 <!-- 2nd item -->
                 <div class="relative flex flex-col items-center" data-aos="fade-up" data-aos-delay="200">
                   <div aria-hidden="true" class="absolute h-1 border-t border-dashed border-gray-700 hidden md:block" style="width:calc(100% - 32px);left:calc(50% + 48px);top:32px;" data-aos="fade-in" data-aos-delay="400"></div>
-                  <svg class="w-16 h-16 mb-4" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                  <svg class="step-pulse w-16 h-16 mb-4" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
                     <rect class="fill-current text-sky-400" width="64" height="64" rx="32" />
                     <g fill="none" fill-rule="evenodd">
                       <path class="stroke-current text-purple-300" d="M40 22a2 2 0 012 2v16a2 2 0 01-2 2H24a2 2 0 01-2-2V24a2 2 0 012-2" stroke-width="2" stroke-linecap="square" />
@@ -114,7 +131,7 @@
                 </div>
                 <!-- 3rd item -->
                 <div class="relative flex flex-col items-center" data-aos="fade-up" data-aos-delay="400">
-                  <svg class="w-16 h-16 mb-4" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                  <svg class="step-pulse w-16 h-16 mb-4" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
                     <rect class="fill-current text-sky-400" width="64" height="64" rx="32" />
                     <path class="stroke-current text-purple-300" stroke-width="2" stroke-linecap="square" d="M21 35l4 4 12-15" fill="none" fill-rule="evenodd" />
                     <path class="stroke-current text-white" d="M42 29h-3M42 34h-7M42 39H31" stroke-width="2" stroke-linecap="square" />
@@ -279,21 +296,21 @@
               <!-- Social links -->
               <ul class="flex mb-4 md:order-1 md:ml-4 md:mb-0">
                 <li>
-                  <a class="flex justify-center items-center text-sky-600 bg-gray-800 hover:text-gray-100 hover:bg-sky-600 rounded-full transition duration-150 ease-in-out" href="#0" aria-label="Twitter">
+                  <a class="flex justify-center items-center text-sky-600 bg-gray-800 hover:text-gray-100 hover:bg-sky-600 rounded-full transition duration-150 ease-in-out" href="https://x.com/MyCustomApp" aria-label="Twitter">
                     <svg class="w-8 h-8 fill-current" viewBox="0 0 32 32">
                       <path d="M24 11.5c-.6.3-1.2.4-1.9.5.7-.4 1.2-1 1.4-1.8-.6.4-1.3.6-2.1.8-.6-.6-1.5-1-2.4-1-1.7 0-3.2 1.5-3.2 3.3 0 .3 0 .5.1.7-2.7-.1-5.2-1.4-6.8-3.4-.3.5-.4 1-.4 1.7 0 1.1.6 2.1 1.5 2.7-.5 0-1-.2-1.5-.4 0 1.6 1.1 2.9 2.6 3.2-.3.1-.6.1-.9.1-.2 0-.4 0-.6-.1.4 1.3 1.6 2.3 3.1 2.3-1.1.9-2.5 1.4-4.1 1.4H8c1.5.9 3.2 1.5 5 1.5 6 0 9.3-5 9.3-9.3v-.4c.7-.5 1.3-1.1 1.7-1.8z" />
                     </svg>
                   </a>
                 </li>
                 <li class="ml-4">
-                  <a class="flex justify-center items-center text-sky-600 bg-gray-800 hover:text-gray-100 hover:bg-sky-600 rounded-full transition duration-150 ease-in-out" href="#0" aria-label="Facebook">
+                  <a class="flex justify-center items-center text-sky-600 bg-gray-800 hover:text-gray-100 hover:bg-sky-600 rounded-full transition duration-150 ease-in-out" href="https://www.facebook.com/profile.php?id=100087891636398" aria-label="Facebook">
                     <svg class="w-8 h-8 fill-current" viewBox="0 0 32 32">
                       <path d="M14.023 24L14 17h-3v-3h3v-2c0-2.7 1.672-4 4.08-4 1.153 0 2.144.086 2.433.124v2.821h-1.67c-1.31 0-1.563.623-1.563 1.536V14H21l-1 3h-2.72v7h-3.257z" />
                     </svg>
                   </a>
                 </li>
                 <li class="ml-4">
-                  <a class="flex justify-center items-center text-sky-600 bg-gray-800 hover:text-gray-100 hover:bg-sky-600 rounded-full transition duration-150 ease-in-out" href="#0" aria-label="Instagram">
+                  <a class="flex justify-center items-center text-sky-600 bg-gray-800 hover:text-gray-100 hover:bg-sky-600 rounded-full transition duration-150 ease-in-out" href="https://www.instagram.com/mycustomapp/" aria-label="Instagram">
                     <svg class="w-8 h-8 fill-current" viewBox="0 0 32 32">
                       <circle cx="20.145" cy="11.892" r="1" />
                       <path d="M16 20c-2.206 0-4-1.794-4-4s1.794-4 4-4 4 1.794 4 4-1.794 4-4 4zm0-6c-1.103 0-2 .897-2 2s.897 2 2 2 2-.897 2-2-.897-2-2-2z" />
@@ -302,7 +319,7 @@
                   </a>
                 </li>
                 <li class="ml-4">
-                  <a class="flex justify-center items-center text-sky-600 bg-gray-800 hover:text-gray-100 hover:bg-sky-600 rounded-full transition duration-150 ease-in-out" href="#0" aria-label="Linkedin">
+                  <a class="flex justify-center items-center text-sky-600 bg-gray-800 hover:text-gray-100 hover:bg-sky-600 rounded-full transition duration-150 ease-in-out" href="https://www.linkedin.com/company/my-custom-app" aria-label="Linkedin">
                     <svg class="w-8 h-8 fill-current" viewBox="0 0 32 32">
                       <path d="M23.3 8H8.7c-.4 0-.7.3-.7.7v14.7c0 .3.3.6.7.6h14.7c.4 0 .7-.3.7-.7V8.7c-.1-.4-.4-.7-.8-.7zM12.7 21.6h-2.3V14h2.4v7.6h-.1zM11.6 13c-.8 0-1.4-.7-1.4-1.4 0-.8.6-1.4 1.4-1.4.8 0 1.4.6 1.4 1.4-.1.7-.7 1.4-1.4 1.4zm10 8.6h-2.4v-3.7c0-.9 0-2-1.2-2s-1.4 1-1.4 2v3.8h-2.4V14h2.3v1c.3-.6 1.1-1.2 2.2-1.2 2.4 0 2.8 1.6 2.8 3.6v4.2h.1z" />
                     </svg>
@@ -321,5 +338,13 @@
     <script src="./js/vendors/alpinejs.min.js" defer></script>
     <script src="./js/vendors/aos.js"></script>
     <script src="./js/main.js"></script>
+    <script>
+      window.addEventListener('scroll', function() {
+        const bounceArrow = document.querySelector('.bounce-arrow');
+        if (window.scrollY > 0) {
+          bounceArrow.classList.add('hidden');
+        }
+      });
+    </script>
   </body>
 </html>
