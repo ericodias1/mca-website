@@ -823,6 +823,10 @@ select{
   transform: scale(1.05); 
 }
 
+.customer-logos:hover .customer-logo {
+  filter: brightness(0) invert(1);
+}
+
 .glow-step-second {
   position: relative;
   height: 1px;
