@@ -5,18 +5,33 @@ AOS.init({
   easing: 'ease-out-sine',
 });
 
-function validateContactForm() {
-  fields = ['name', 'email'];
-  submitForm = fields.every((field) => document.forms["contactForm"][field].value != "")
+function validateForm() {
+  requiredFields = ['name', 'email', 'phone'];
 
-fields.forEach((field) => {
-    input = document.forms["contactForm"][field]
+  namePresent = document.forms["contactForm"]['name'].value != "";
+  emailOrPhonePresent = requiredFields.slice(1).some((field) => document.forms["contactForm"][field].value != "");
 
-    if (input.value == "") {
-      input.classList.add("border-red-500");
-      document.getElementById(`${field}-error`).classList.remove('hidden')
-    };
-  });
+  if (!namePresent || !emailOrPhonePresent) {
+    requiredFields.forEach((field) => {
+      input = document.forms["contactForm"][field];
+      
+      if (input.value == "") {
+        input.classList.add("border-red-500");
+        document.getElementById(`${field}-error`).classList.remove('hidden');
+      };
+    });
+  };
 
-  return submitForm;
+  if (namePresent && emailOrPhonePresent) {
+    var v = grecaptcha.getResponse();
+
+    if (v.length == 0) {
+        document.getElementById('captcha').innerHTML="You can't leave Captcha Code empty";
+        return false;
+      }
+      else {
+        document.getElementById('captcha').innerHTML="Captcha completed";
+        return true;
+      }
+    } else return false;
 }

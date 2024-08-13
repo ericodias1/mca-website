@@ -60,7 +60,7 @@
                 <p class="text-xl text-gray-400" data-aos="fade-up" data-aos-delay="200">We have custom plans to power your business. Tell us your needs, and we’ll contact you shortly.</p>
               </div>
               <!-- Contact form -->
-              <form class="max-w-xl mx-auto" method="POST" action="https://formspree.io/f/xnnadjpz" name="contactForm" onsubmit="return validateContactForm()">
+              <form class="max-w-xl mx-auto" method="POST" action="https://formspree.io/f/xnnadjpz" name="contactForm" onsubmit="return validateForm()">
                 <div class="flex flex-wrap -mx-3 mb-4">
                   <div class="w-full px-3">
                     <label class="block text-gray-300 text-sm font-medium mb-1" for="name">Name <span class="text-red-600">*</span></label>
@@ -77,8 +77,33 @@
                 </div>
                 <div class="flex flex-wrap -mx-3 mb-4">
                   <div class="w-full px-3">
+                    <label class="block text-gray-300 text-sm font-medium mb-1" for="phone">Phone <span class="text-red-600">*</span></label>
+                    <input name="phone" id="phone" type="text" class="form-input w-full text-gray-300" placeholder="Enter your phone number" />
+                    <p id="phone-error" class="hidden text-red-500 text-sm mt-2">Phone is required.</p>
+                  </div>
+                </div>
+                <div class="flex flex-wrap -mx-3 mb-4">
+                  <div class="w-full px-3">
+                    <label class="block text-gray-300 text-sm font-medium mb-1" for="business-name">Business name</label>
+                    <input name="business-name" id="business-name" type="text" class="form-input w-full text-gray-300" placeholder="Enter your business name" />
+                  </div>
+                </div>
+                <div class="flex flex-wrap -mx-3 mb-4">
+                  <div class="w-full px-3">
+                    <label class="block text-gray-300 text-sm font-medium mb-1" for="website">Website</label>
+                    <input name="website" id="website" type="text" class="form-input w-full text-gray-300" placeholder="Enter your website" />
+                  </div>
+                </div>
+                <div class="flex flex-wrap -mx-3 mb-4">
+                  <div class="w-full px-3">
                     <label class="block text-gray-300 text-sm font-medium mb-1" for="message">Message</label>
                     <textarea name="message" id="message" rows="4" class="form-textarea w-full text-gray-300" placeholder="Write your message"></textarea>
+                  </div>
+                </div>
+                <div class="flex flex-wrap -mx-3 mb-4">
+                  <div class="w-full px-3">
+                    <div class="g-recaptcha" id="rcaptcha" data-sitekey="6LfhJyYqAAAAACw8WZtN8YoHqc991hoGq5ST53Ju"></div>
+                    <span id="captcha" style="color:red" /></span>
                   </div>
                 </div>
                 <div class="flex flex-wrap -mx-3 mt-6">
@@ -158,5 +183,6 @@
     <script src="./js/vendors/alpinejs.min.js" defer></script>
     <script src="./js/vendors/aos.js"></script>
     <script src="./js/main.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
   </body>
 </html>
