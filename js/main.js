@@ -26,11 +26,11 @@ function validateForm() {
     var v = grecaptcha.getResponse();
 
     if (v.length == 0) {
-        document.getElementById('captcha').innerHTML="You can't leave Captcha Code empty";
+        document.getElementById('captcha').innerHTML="You can't leave Captcha";
         return false;
       }
       else {
-        document.getElementById('captcha').innerHTML="Captcha completed";
+        document.getElementById('captcha').innerHTML="";
         return true;
       }
     } else return false;
