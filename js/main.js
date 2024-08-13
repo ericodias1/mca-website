@@ -26,7 +26,7 @@ function validateForm() {
     var v = grecaptcha.getResponse();
 
     if (v.length == 0) {
-        document.getElementById('captcha').innerHTML="You can't leave Captcha";
+        document.getElementById('captcha').innerHTML="Captcha is required.";
         return false;
       }
       else {
