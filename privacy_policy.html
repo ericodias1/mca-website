@@ -7,7 +7,7 @@
   <link href="./css/vendors/aos.css" rel="stylesheet" />
   <link href="./style.css" rel="stylesheet" />
   <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
-  <link rel="icon" href="./images/mca-logo.png" type="image/x-icon">
+  <link rel="icon" href="./images/favicon.png" type="image/x-icon">
 </head>
 <body class="font-inter antialiased text-gray-200 tracking-tight" style="background-color: #151719;">
   <!-- Page wrapper -->
@@ -20,11 +20,11 @@
           <div class="shrink-0 mt-4 mr-4">
             <!-- Logo -->
             <a class="block" href="index.html" aria-label="Logo">
-              <img class="w-32 md:w-full md:h-full md:object-cover" src="./images/mca-logo.png" width="1440" height="394" alt="Logo" />
+              <img class="w-full md:w-[300px] h-full object-cover" src="./images/mca-logo.png" width="1440" height="394" alt="Logo" style="width: 300px" />
             </a>
           </div>
           <span class="relative inline-flex">
-            <a href="index.html" class="inline-flex items-center px-4 py-2 font-semibold leading-6 text-sm shadow rounded-md text-white bg-sky-500 transition ease-in-out duration-150">
+            <a href="index.html" class="inline-flex items-center px-4 py-2 font-semibold leading-6 text-sm shadow rounded-md text-white bg-primary-500 transition ease-in-out duration-150">
               Home
             </a>
             <span class="flex absolute h-3 w-3 top-0 right-0 -mt-1 -mr-1">
@@ -41,9 +41,9 @@
         <svg class="absolute top-0 right-0 transform translate-x-1/2 -mr-16" width="650" height="320" fill="none" xmlns="http://www.w3.org/2000/svg">
           <defs>
             <linearGradient id="illustration-01" x1="-4.14" y1="43.12" x2="303.145" y2="391.913" gradientUnits="userSpaceOnUse">
-              <stop stop-color="#38bdf8" stop-opacity=".01" />
-              <stop offset=".538" stop-color="#38bdf8" stop-opacity=".32" />
-              <stop offset="1" stop-color="#38bdf8" stop-opacity=".01" />
+              <stop stop-color="#fe701b" stop-opacity=".01" />
+              <stop offset=".538" stop-color="#fe701b" stop-opacity=".32" />
+              <stop offset="1" stop-color="#fe701b" stop-opacity=".01" />
             </linearGradient>
           </defs>
           <path
@@ -160,79 +160,78 @@
       </div>
     </main>
     <footer>
-      <div class="py-12 md:py-16">
-        <div class="flex max-w-7xl mx-auto px-4 sm:px-6 justify-between">
-          <!-- Top area: Blocks -->
-          <div>
-            <!-- 1st block -->
-            <div class="md:col-span-4 lg:col-span-5">
-              <div class="mb-2">
-                <!-- Logo -->
+        <div class="py-12 md:py-16">
+          <div class="flex max-w-6xl mx-auto px-4 sm:px-6 justify-between">
+            <div class="w-full space-y-3">
+              <div class="flex justify-between w-full items-center">
                 <a class="inline-block" href="index.html" aria-label="Logo">
-                  <img class="w-full h-full object-cover" src="./images/mca-logo.png" width="32" height="32" alt="Logo" />
+                  <img class="w-32 md:w-[200px] md:h-full md:object-cover" src="./images/mca-logo.png" width="32" height="32" alt="Logo" style="width: 200px"/>
                 </a>
+                <span class="relative inline-flex">
+                  <a href="contact.html" class="inline-flex items-center px-4 py-2 font-semibold leading-6 text-sm shadow rounded-md text-white bg-primary-500 transition ease-in-out duration-150">
+                    Schedule a call
+                  </a>
+                  <span class="flex absolute h-3 w-3 top-0 right-0 -mt-1 -mr-1">
+                    <span style="animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;" class="absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-3 w-3 bg-white"></span>
+                  </span>
+                </span>
+              </div>
+              <div class="flex justify-between w-full items-center">
+                <div class="text-gray-400 text-sm mr-4">&copy; 2020 My Custom App. All rights reserved.</div>
+                  <ul class="flex">
+                    <li>
+                      <a class="flex justify-center items-center text-primary-500 bg-gray-800 hover:text-gray-100 hover:bg-primary-500 rounded-full transition duration-150 ease-in-out" href="https://x.com/MyCustomApp" aria-label="Twitter">
+                        <svg class="w-8 h-8 fill-current" viewBox="0 0 32 32">
+                          <path
+                            d="M24 11.5c-.6.3-1.2.4-1.9.5.7-.4 1.2-1 1.4-1.8-.6.4-1.3.6-2.1.8-.6-.6-1.5-1-2.4-1-1.7 0-3.2 1.5-3.2 3.3 0 .3 0 .5.1.7-2.7-.1-5.2-1.4-6.8-3.4-.3.5-.4 1-.4 1.7 0 1.1.6 2.1 1.5 2.7-.5 0-1-.2-1.5-.4 0 1.6 1.1 2.9 2.6 3.2-.3.1-.6.1-.9.1-.2 0-.4 0-.6-.1.4 1.3 1.6 2.3 3.1 2.3-1.1.9-2.5 1.4-4.1 1.4H8c1.5.9 3.2 1.5 5 1.5 6 0 9.3-5 9.3-9.3v-.4c.7-.5 1.3-1.1 1.7-1.8z"
+                          />
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="ml-4">
+                      <a
+                        class="flex justify-center items-center text-primary-500 bg-gray-800 hover:text-gray-100 hover:bg-primary-500 rounded-full transition duration-150 ease-in-out"
+                        href="https://www.facebook.com/profile.php?id=100087891636398"
+                        aria-label="Facebook"
+                      >
+                        <svg class="w-8 h-8 fill-current" viewBox="0 0 32 32">
+                          <path d="M14.023 24L14 17h-3v-3h3v-2c0-2.7 1.672-4 4.08-4 1.153 0 2.144.086 2.433.124v2.821h-1.67c-1.31 0-1.563.623-1.563 1.536V14H21l-1 3h-2.72v7h-3.257z" />
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="ml-4">
+                      <a
+                        class="flex justify-center items-center text-primary-500 bg-gray-800 hover:text-gray-100 hover:bg-primary-500 rounded-full transition duration-150 ease-in-out"
+                        href="https://www.instagram.com/mycustomapp/"
+                        aria-label="Instagram"
+                      >
+                        <svg class="w-8 h-8 fill-current" viewBox="0 0 32 32">
+                          <circle cx="20.145" cy="11.892" r="1" />
+                          <path d="M16 20c-2.206 0-4-1.794-4-4s1.794-4 4-4 4 1.794 4 4-1.794 4-4 4zm0-6c-1.103 0-2 .897-2 2s.897 2 2 2 2-.897 2-2-.897-2-2-2z" />
+                          <path d="M20 24h-8c-2.056 0-4-1.944-4-4v-8c0-2.056 1.944-4 4-4h8c2.056 0 4 1.944 4 4v8c0 2.056-1.944 4-4 4zm-8-14c-.935 0-2 1.065-2 2v8c0 .953 1.047 2 2 2h8c.935 0 2-1.065 2-2v-8c0-.935-1.065-2-2-2h-8z" />
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="ml-4">
+                      <a
+                        class="flex justify-center items-center text-primary-500 bg-gray-800 hover:text-gray-100 hover:bg-primary-500 rounded-full transition duration-150 ease-in-out"
+                        href="https://www.linkedin.com/company/my-custom-app"
+                        aria-label="Linkedin"
+                      >
+                        <svg class="w-8 h-8 fill-current" viewBox="0 0 32 32">
+                          <path
+                            d="M23.3 8H8.7c-.4 0-.7.3-.7.7v14.7c0 .3.3.6.7.6h14.7c.4 0 .7-.3.7-.7V8.7c-.1-.4-.4-.7-.8-.7zM12.7 21.6h-2.3V14h2.4v7.6h-.1zM11.6 13c-.8 0-1.4-.7-1.4-1.4 0-.8.6-1.4 1.4-1.4.8 0 1.4.6 1.4 1.4-.1.7-.7 1.4-1.4 1.4zm10 8.6h-2.4v-3.7c0-.9 0-2-1.2-2s-1.4 1-1.4 2v3.8h-2.4V14h2.3v1c.3-.6 1.1-1.2 2.2-1.2 2.4 0 2.8 1.6 2.8 3.6v4.2h.1z"
+                          />
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
               </div>
             </div>
           </div>
-          <!-- Bottom area -->
-          <div class="flex items-center justify-center">
-            <!-- Social links -->
-            <ul class="flex mb-4 md:order-1 md:ml-4 md:mb-0 mt-6">
-              <li>
-                <a class="flex justify-center items-center text-sky-600 bg-gray-800 hover:text-gray-100 hover:bg-sky-600 rounded-full transition duration-150 ease-in-out" href="https://x.com/MyCustomApp" aria-label="Twitter">
-                  <svg class="w-8 h-8 fill-current" viewBox="0 0 32 32">
-                    <path
-                      d="M24 11.5c-.6.3-1.2.4-1.9.5.7-.4 1.2-1 1.4-1.8-.6.4-1.3.6-2.1.8-.6-.6-1.5-1-2.4-1-1.7 0-3.2 1.5-3.2 3.3 0 .3 0 .5.1.7-2.7-.1-5.2-1.4-6.8-3.4-.3.5-.4 1-.4 1.7 0 1.1.6 2.1 1.5 2.7-.5 0-1-.2-1.5-.4 0 1.6 1.1 2.9 2.6 3.2-.3.1-.6.1-.9.1-.2 0-.4 0-.6-.1.4 1.3 1.6 2.3 3.1 2.3-1.1.9-2.5 1.4-4.1 1.4H8c1.5.9 3.2 1.5 5 1.5 6 0 9.3-5 9.3-9.3v-.4c.7-.5 1.3-1.1 1.7-1.8z"
-                    />
-                  </svg>
-                </a>
-              </li>
-              <li class="ml-4">
-                <a
-                  class="flex justify-center items-center text-sky-600 bg-gray-800 hover:text-gray-100 hover:bg-sky-600 rounded-full transition duration-150 ease-in-out"
-                  href="https://www.facebook.com/profile.php?id=100087891636398"
-                  aria-label="Facebook"
-                >
-                  <svg class="w-8 h-8 fill-current" viewBox="0 0 32 32">
-                    <path d="M14.023 24L14 17h-3v-3h3v-2c0-2.7 1.672-4 4.08-4 1.153 0 2.144.086 2.433.124v2.821h-1.67c-1.31 0-1.563.623-1.563 1.536V14H21l-1 3h-2.72v7h-3.257z" />
-                  </svg>
-                </a>
-              </li>
-              <li class="ml-4">
-                <a
-                  class="flex justify-center items-center text-sky-600 bg-gray-800 hover:text-gray-100 hover:bg-sky-600 rounded-full transition duration-150 ease-in-out"
-                  href="https://www.instagram.com/mycustomapp/"
-                  aria-label="Instagram"
-                >
-                  <svg class="w-8 h-8 fill-current" viewBox="0 0 32 32">
-                    <circle cx="20.145" cy="11.892" r="1" />
-                    <path d="M16 20c-2.206 0-4-1.794-4-4s1.794-4 4-4 4 1.794 4 4-1.794 4-4 4zm0-6c-1.103 0-2 .897-2 2s.897 2 2 2 2-.897 2-2-.897-2-2-2z" />
-                    <path d="M20 24h-8c-2.056 0-4-1.944-4-4v-8c0-2.056 1.944-4 4-4h8c2.056 0 4 1.944 4 4v8c0 2.056-1.944 4-4 4zm-8-14c-.935 0-2 1.065-2 2v8c0 .953 1.047 2 2 2h8c.935 0 2-1.065 2-2v-8c0-.935-1.065-2-2-2h-8z" />
-                  </svg>
-                </a>
-              </li>
-              <li class="ml-4">
-                <a
-                  class="flex justify-center items-center text-sky-600 bg-gray-800 hover:text-gray-100 hover:bg-sky-600 rounded-full transition duration-150 ease-in-out"
-                  href="https://www.linkedin.com/company/my-custom-app"
-                  aria-label="Linkedin"
-                >
-                  <svg class="w-8 h-8 fill-current" viewBox="0 0 32 32">
-                    <path
-                      d="M23.3 8H8.7c-.4 0-.7.3-.7.7v14.7c0 .3.3.6.7.6h14.7c.4 0 .7-.3.7-.7V8.7c-.1-.4-.4-.7-.8-.7zM12.7 21.6h-2.3V14h2.4v7.6h-.1zM11.6 13c-.8 0-1.4-.7-1.4-1.4 0-.8.6-1.4 1.4-1.4.8 0 1.4.6 1.4 1.4-.1.7-.7 1.4-1.4 1.4zm10 8.6h-2.4v-3.7c0-.9 0-2-1.2-2s-1.4 1-1.4 2v3.8h-2.4V14h2.3v1c.3-.6 1.1-1.2 2.2-1.2 2.4 0 2.8 1.6 2.8 3.6v4.2h.1z"
-                    />
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </div>
         </div>
-        <div class="flex max-w-7xl mx-auto px-4 sm:px-6 justify-center md:justify-between">
-          <!-- Copyrights note -->
-          <div class="text-gray-400 text-sm mr-4">&copy; 2020 My Custom App. All rights reserved.</div>
-        </div>
-      </div>
-    </footer>
+      </footer>
     </div>
   </body>
 </html>
