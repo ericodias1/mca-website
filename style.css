@@ -3864,7 +3864,7 @@ select{
   left: 0;
   height: 100%;
   width: 100%;
-  background: linear-gradient(to right, rgb(6, 189, 248), rgb(14, 165, 233));
+  background: linear-gradient(to right, rgba(45, 181, 115, 0.5), rgba(45, 181, 115, 1));
   -webkit-animation: move-and-fade 2s ease-in-out infinite;
           animation: move-and-fade 2s ease-in-out infinite;
   -webkit-animation-delay: 1s;
@@ -3887,7 +3887,7 @@ select{
   left: 0;
   height: 100%;
   width: 100%;
-  background: linear-gradient(to right, rgb(6, 189, 248), rgb(14, 165, 233));
+  background: linear-gradient(to right, rgba(45, 181, 115, 0.5), rgba(45, 181, 115, 1));
   -webkit-animation: move-and-fade 2s ease-in-out infinite;
           animation: move-and-fade 2s ease-in-out infinite;
   opacity: 0;
