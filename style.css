@@ -1108,10 +1108,6 @@ select {
   width: 550px;
 }
 
-.w-\[200px\] {
-  width: 200px;
-}
-
 .w-10 {
   width: 2.5rem;
 }
@@ -1142,10 +1138,6 @@ select {
 
 .max-w-\[400px\] {
   max-width: 400px;
-}
-
-.max-w-lg {
-  max-width: 32rem;
 }
 
 .max-w-sm {
@@ -4469,7 +4461,7 @@ input[type=range]::-moz-focus-outer {
   left: 0;
   right: 0;
   z-index: 1;
-  background-image: url(./images/hero-image-01.jpg);
+  background-image: url(./images/bg-glg-final.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   opacity: 0.3;
@@ -7029,12 +7021,12 @@ input[type=range]::-moz-focus-outer {
     margin-left: -70px;
   }
 
-  .sm\:w-\[700px\] {
-    width: 700px;
+  .sm\:flex {
+    display: flex;
   }
 
-  .sm\:w-full {
-    width: 100%;
+  .sm\:w-\[700px\] {
+    width: 700px;
   }
 
   .sm\:max-w-xl {
