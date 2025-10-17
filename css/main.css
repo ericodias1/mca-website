@@ -825,9 +825,9 @@ select{
   transform: scale(1.05);
 }
 
-.customer-logos:hover .customer-logo {
+/* .customer-logos:hover .customer-logo {
   filter: brightness(0) invert(1);
-}
+} */
 
 .glow-step-second {
   position: relative;
@@ -844,7 +844,7 @@ select{
   left: 0;
   height: 100%;
   width: 100%;
-  background: linear-gradient(to right, rgb(6, 189, 248), rgb(14, 165, 233));
+  background: linear-gradient(to right, rgb(244, 254, 0, 0.7), rgb(244, 254, 0));
   animation: move-and-fade 2s ease-in-out infinite;
   animation-delay: 1s;
   opacity: 0;
@@ -865,7 +865,7 @@ select{
   left: 0;
   height: 100%;
   width: 100%;
-  background: linear-gradient(to right, rgb(6, 189, 248), rgb(14, 165, 233));
+  background: linear-gradient(to right, rgb(244, 254, 0, 0.7), rgb(244, 254, 0));
   animation: move-and-fade 2s ease-in-out infinite;
   opacity: 0;
 }
@@ -1027,7 +1027,7 @@ select{
 @keyframes pulse-animation {
   0% {
     border-radius: 50px;
-    box-shadow: 0 0 0 0px rgba(45, 181, 115, 1);
+    box-shadow: 0 0 0 0px rgba(244, 254, 0, 1);
   }
   100% {
     border-radius: 50px;
@@ -1036,7 +1036,7 @@ select{
 }
 
 .gradient-animation {
-  background: repeating-linear-gradient(90deg, rgba(45, 181, 115, 1, 1) 0%, rgba(45, 181, 115, 1) 33%, rgba(45, 181, 115, 1, 1) 66%, rgba(45, 181, 115, 1) 100%);
+  background: repeating-linear-gradient(90deg, rgb(244, 254, 0, 1, 1) 0%, rgba(244, 254, 0, 1) 33%, rgb(244, 254, 0, 1, 1) 66%, rgba(244, 254, 0, 1) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-repeat:repeat-x;

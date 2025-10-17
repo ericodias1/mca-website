@@ -330,18 +330,6 @@ input[type=range]::-moz-focus-outer {
   border: 0;
 }
 
-/* Gradient Animation */
-.gradient-animation {
-  background: repeating-linear-gradient(90deg, rgba(45, 181, 115, 1) 0%, rgba(77, 199, 135, 1) 33%, rgba(45, 181, 115, 1) 66%, rgba(77, 199, 135, 1) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  color: transparent;
-  background-repeat: repeat-x;
-  background-size: 400% 100%;
-  animation: gradient-repeat 3s linear infinite;
-}
-
 @keyframes gradient-repeat {
   0% { background-position: 100% 50%; }
   100% { background-position: -33% 50%; }
@@ -1268,9 +1256,9 @@ select{
   transform: scale(1.05);
 }
 
-.customer-logos:hover .customer-logo {
+/* .customer-logos:hover .customer-logo {
   filter: brightness(0) invert(1);
-}
+} */
 
 .glow-step-second {
   position: relative;
@@ -1287,7 +1275,7 @@ select{
   left: 0;
   height: 100%;
   width: 100%;
-  background: linear-gradient(to right, rgb(6, 189, 248), rgb(14, 165, 233));
+  background: linear-gradient(to right, rgb(244, 254, 0, 0.7), rgb(244, 254, 0));
   animation: move-and-fade 2s ease-in-out infinite;
   animation-delay: 1s;
   opacity: 0;
@@ -1308,7 +1296,7 @@ select{
   left: 0;
   height: 100%;
   width: 100%;
-  background: linear-gradient(to right, rgb(6, 189, 248), rgb(14, 165, 233));
+  background: linear-gradient(to right, rgb(244, 254, 0, 0.7), rgb(244, 254, 0));
   animation: move-and-fade 2s ease-in-out infinite;
   opacity: 0;
 }
@@ -1470,7 +1458,7 @@ select{
 @keyframes pulse-animation {
   0% {
     border-radius: 50px;
-    box-shadow: 0 0 0 0px rgba(45, 181, 115, 1);
+    box-shadow: 0 0 0 0px rgba(244, 254, 0, 1);
   }
   100% {
     border-radius: 50px;
@@ -1479,7 +1467,7 @@ select{
 }
 
 .gradient-animation {
-  background: repeating-linear-gradient(90deg, rgba(45, 181, 115, 1) 0%, rgba(77, 199, 135, 1) 13%, rgba(45, 181, 115, 1) 36%, rgba(77, 199, 135, 1) 100%);
+  background: repeating-linear-gradient(90deg, rgba(244, 254, 0, 1) 0%, rgba(244, 254, 0, 0.8) 33%, rgba(244, 254, 0, 1) 66%, rgba(244, 254, 0, 0.8) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-repeat:repeat-x;
