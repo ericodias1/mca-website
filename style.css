@@ -1335,7 +1335,7 @@ select {
 
 .bg-primary-500 {
   --tw-bg-opacity: 1;
-  background-color: rgb(244 254 0 / var(--tw-bg-opacity));
+  background-color: rgb(49 228 205 / var(--tw-bg-opacity));
 }
 
 .bg-white {
@@ -1536,7 +1536,7 @@ select {
 
 .text-primary-500 {
   --tw-text-opacity: 1;
-  color: rgb(244 254 0 / var(--tw-text-opacity));
+  color: rgb(49 228 205 / var(--tw-text-opacity));
 }
 
 .text-white {
@@ -3872,7 +3872,7 @@ select{
   left: 0;
   height: 100%;
   width: 100%;
-  background: linear-gradient(to right, rgb(244, 254, 0, 0.7), rgb(244, 254, 0));
+  background: linear-gradient(to right, rgb(47, 228, 205, 0.7), rgb(47, 228, 205));
   -webkit-animation: move-and-fade 2s ease-in-out infinite;
           animation: move-and-fade 2s ease-in-out infinite;
   -webkit-animation-delay: 1s;
@@ -3895,7 +3895,7 @@ select{
   left: 0;
   height: 100%;
   width: 100%;
-  background: linear-gradient(to right, rgb(244, 254, 0, 0.7), rgb(244, 254, 0));
+  background: linear-gradient(to right, rgb(47, 228, 205, 0.7), rgb(47, 228, 205));
   -webkit-animation: move-and-fade 2s ease-in-out infinite;
           animation: move-and-fade 2s ease-in-out infinite;
   opacity: 0;
@@ -4155,7 +4155,7 @@ select{
 @-webkit-keyframes pulse-animation {
   0% {
     border-radius: 50px;
-    box-shadow: 0 0 0 0px rgba(244, 254, 0, 1);
+    box-shadow: 0 0 0 0px rgba(47, 228, 205, 1);
   }
 
   100% {
@@ -4167,7 +4167,7 @@ select{
 @keyframes pulse-animation {
   0% {
     border-radius: 50px;
-    box-shadow: 0 0 0 0px rgba(244, 254, 0, 1);
+    box-shadow: 0 0 0 0px rgba(47, 228, 205, 1);
   }
 
   100% {
@@ -4177,7 +4177,7 @@ select{
 }
 
 .gradient-animation {
-  background: repeating-linear-gradient(90deg, rgba(244, 254, 0, 1) 0%, rgba(244, 254, 0, 0.8) 33%, rgba(244, 254, 0, 1) 66%, rgba(244, 254, 0, 0.8) 100%);
+  background: repeating-linear-gradient(90deg, rgba(47, 228, 205, 1) 0%, rgba(47, 228, 205, 0.8) 33%, rgba(47, 228, 205, 1) 66%, rgba(47, 228, 205, 0.8) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-repeat:repeat-x;
@@ -6909,7 +6909,7 @@ input[type=range]::-moz-focus-outer {
 
 .hover\:bg-primary-500:hover {
   --tw-bg-opacity: 1;
-  background-color: rgb(244 254 0 / var(--tw-bg-opacity));
+  background-color: rgb(49 228 205 / var(--tw-bg-opacity));
 }
 
 .hover\:text-gray-100:hover {
