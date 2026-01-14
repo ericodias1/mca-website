@@ -332,7 +332,7 @@ input[type=range]::-moz-focus-outer {
 
 /* Gradient Animation */
 .gradient-animation {
-  background: repeating-linear-gradient(90deg, rgba(45, 181, 115, 1) 0%, rgba(77, 199, 135, 1) 33%, rgba(45, 181, 115, 1) 66%, rgba(77, 199, 135, 1) 100%);
+  background: repeating-linear-gradient(90deg, rgba(36, 129, 254, 1) 0%, rgba(29, 177, 239, 1) 33%, rgba(36, 129, 254, 1) 66%, rgba(29, 177, 239, 1) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -1470,7 +1470,7 @@ select{
 @keyframes pulse-animation {
   0% {
     border-radius: 50px;
-    box-shadow: 0 0 0 0px rgba(45, 181, 115, 1);
+    box-shadow: 0 0 0 0px rgba(36, 129, 254, 1);
   }
   100% {
     border-radius: 50px;
@@ -1479,7 +1479,7 @@ select{
 }
 
 .gradient-animation {
-  background: repeating-linear-gradient(90deg, rgba(45, 181, 115, 1) 0%, rgba(77, 199, 135, 1) 13%, rgba(45, 181, 115, 1) 36%, rgba(77, 199, 135, 1) 100%);
+  background: repeating-linear-gradient(90deg, rgba(36, 129, 254, 1) 0%, rgba(29, 177, 239, 1) 13%, rgba(36, 129, 254, 1) 36%, rgba(29, 177, 239, 1) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-repeat:repeat-x;

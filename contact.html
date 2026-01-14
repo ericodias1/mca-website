@@ -19,7 +19,7 @@
             <div class="shrink-0 mt-4 mr-4">
               <!-- Logo -->
               <a class="block" href="index.html" aria-label="Logo">
-                <img class="md:w-[300px] h-full object-cover" src="./images/glg-top-logo.png" width="200" height="394" alt="Logo" />
+                <img class="md:w-[300px] h-full object-cover" src="./images/psu-logo.png" width="200" height="394" alt="Logo" />
               </a>
             </div>
             <span class="relative inline-flex">
@@ -41,9 +41,9 @@
           <svg class="absolute top-0 right-0 transform translate-x-1/2 -mr-16" width="722" height="320" fill="none" xmlns="http://www.w3.org/2000/svg">
             <defs>
               <linearGradient id="illustration-01" x1="-4.14" y1="43.12" x2="303.145" y2="391.913" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#2DB573" stop-opacity=".01" />
-                <stop offset=".538" stop-color="#2DB573" stop-opacity=".32" />
-                <stop offset="1" stop-color="#2DB573" stop-opacity=".01" />
+                <stop stop-color="#2481FE" stop-opacity=".01" />
+                <stop offset=".538" stop-color="#2481FE" stop-opacity=".32" />
+                <stop offset="1" stop-color="#2481FE" stop-opacity=".01" />
               </linearGradient>
             </defs>
             <path
@@ -61,7 +61,20 @@
                 <p class="text-xl text-gray-400" data-aos="fade-up" data-aos-delay="200">We have custom plans to power your business. Tell us your needs, and we’ll contact you shortly.</p>
               </div>
               <!-- Contact form -->
-              <form class="max-w-xl mx-auto" method="POST" action="https://portal.golfleagueguru.com/contact_forms" name="contactForm" netlify onsubmit="return validateForm()">
+              <!-- <form class="max-w-xl mx-auto" method="POST" action="https://portal.golfleagueguru.com/contact_forms" name="contactForm" netlify onsubmit="return validateForm()"> -->
+              <form class="max-w-xl mx-auto"
+                    method="POST"
+                    name="contactForm"
+                    netlify
+                    onsubmit="return validateForm()"
+                    data-netlify="true"
+                    data-netlify-recaptcha="true"
+                    netlify-honeypot="bot-field">
+                <!-- honeypot (não mostrar) -->
+                <p style="display:none;">
+                  <label>Don’t fill this out: <input name="bot-field" /></label>
+                </p>
+                <input type="hidden" name="form-name" value="contact" />
                 <div class="flex flex-wrap -mx-3 mb-4">
                   <div class="w-full px-3">
                     <label class="block text-gray-300 text-sm font-medium mb-1" for="name">Name <span class="text-red-600">*</span></label>
@@ -105,7 +118,8 @@
                 <div class="flex flex-wrap -mx-3 mb-4">
                   <div class="w-full px-3">
                     <div class="flex justify-center">
-                      <div class="g-recaptcha" id="rcaptcha" data-sitekey="6Ld7C-QpAAAAAPBwG7zm99yrt0-PxV36tWr1Xnnc"></div>
+                      <!-- <div class="g-recaptcha" id="rcaptcha" data-sitekey="6Ld7C-QpAAAAAPBwG7zm99yrt0-PxV36tWr1Xnnc"></div> -->
+                      <div data-netlify-recaptcha="true"></div>
                     </div>
                     <div class="flex justify-center">
                       <span id="captcha" style="color: #ef4444;"></span>
@@ -114,7 +128,7 @@
                 </div>
                 <div class="flex flex-wrap -mx-3 mt-6">
                   <div class="w-full px-3">
-                    <button class="btn text-white bg-primary-500 hover:bg-primary-600 w-full">Send</button>
+                    <button class="btn text-white bg-primary-500 w-full">Send</button>
                   </div>
                 </div>
               </form>

@@ -20,18 +20,7 @@ function validateForm() {
         document.getElementById(`${field}-error`).classList.remove('hidden');
       };
     });
+
+    return false;
   };
-
-  if (namePresent && emailOrPhonePresent) {
-    var v = grecaptcha.getResponse();
-
-    if (v.length == 0) {
-        document.getElementById('captcha').innerHTML="Captcha is required.";
-        return false;
-      }
-      else {
-        document.getElementById('captcha').innerHTML="";
-        return true;
-      }
-    } else return false;
 }
