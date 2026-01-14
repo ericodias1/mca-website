@@ -27,14 +27,13 @@ const handleSubmit = event => {
     return false;
   };
 
-  alert("Submitting form...");
   const formData = new FormData(myForm);
   fetch("/", {
     method: "POST",
     headers: { "Content-Type": "application/x-www-form-urlencoded" },
     body: new URLSearchParams(formData).toString()
   })
-    .then(() => alert("Form successfully submitted"))
+    .then(() => alert("Thank you for your message! We will get back to you shortly."))
     .catch(error => alert(error));
 }
 
