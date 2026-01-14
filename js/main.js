@@ -5,7 +5,9 @@ AOS.init({
   easing: 'ease-out-sine',
 });
 
-function validateForm() {
+const handleSubmit = event => {
+  event.preventDefault();
+
   const myForm = document.forms["contact"];
   requiredFields = ['name', 'email', 'phone'];
 
@@ -34,3 +36,5 @@ function validateForm() {
     .then(() => console.log("Form successfully submitted"))
     .catch(error => alert(error));
 }
+
+document.querySelector("form").addEventListener("submit", handleSubmit);
