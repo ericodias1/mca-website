@@ -6,14 +6,15 @@ AOS.init({
 });
 
 function validateForm() {
+  const myForm = document.forms["contact"];
   requiredFields = ['name', 'email', 'phone'];
 
-  namePresent = document.forms["contactForm"]['name'].value != "";
-  emailOrPhonePresent = requiredFields.slice(1).some((field) => document.forms["contactForm"][field].value != "");
+  namePresent = myForm['name'].value != "";
+  emailOrPhonePresent = requiredFields.slice(1).some((field) => myForm[field].value != "");
 
   if (!namePresent || !emailOrPhonePresent) {
     requiredFields.forEach((field) => {
-      input = document.forms["contactForm"][field];
+      input = myForm[field];
       
       if (input.value == "") {
         input.classList.add("border-red-500");
@@ -23,4 +24,13 @@ function validateForm() {
 
     return false;
   };
+
+  const formData = new FormData(myForm);
+  fetch("/", {
+    method: "POST",
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body: new URLSearchParams(formData).toString()
+  })
+    .then(() => console.log("Form successfully submitted"))
+    .catch(error => alert(error));
 }
